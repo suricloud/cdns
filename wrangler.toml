@@ -39,7 +39,7 @@ CLOUD_PLATFORM = "cloudflare"
 name = "basic-unbound"
 minify = true
 routes = [
-  "dns.suricloud.com/*",
+  "serverless-dns.suricloud.workers.dev/*",
   ]
 # vars are not inherited
 # workers/platform/environment-variables#environment-variables-via-wrangler
@@ -58,7 +58,7 @@ minify = true
 routes = [
   "one.rethinkdns.com/*",
   "one.bravedns.com/*",
-  "one.suricloud.workers.dev/*",
+  "one.suricloud.com/*",
 ]
 analytics_engine_datasets = [
     { binding = "METRICS", dataset = "ONE_M0" },
